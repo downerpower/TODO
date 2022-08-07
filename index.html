@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>To do list</title>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+   <main class="app">
+      <section class="greeting">
+         <h2 class="title">
+            Get ready to improve your English, <input type="text" id="name" placeholder="Name here">
+         </h2>
+      </section>
+      <section class="create-todo">
+         <h3>CREATE A TODO</h3>
+         <form id="new-todo-form">
+            <h4>What are you going to do today?</h4>
+            <input type="text" name="content" id="content" placeholder="e.g. Learn new words" />
+            <h4>Pick a category</h4>
+            <div class="options">
+               <label>
+                  <input type="radio" name="category" id="category1" value="reading" />
+                  <span class="bubble reading"></span>
+                  <div>Reading</div> 
+               </label>
+               <label>
+                  <input type="radio" name="category" id="category2" value="listening" />
+                  <span class="bubble listening"></span>
+                  <div>Listening</div> 
+               </label>
+               <label>
+                  <input type="radio" name="category" id="category3" value="writing" />
+                  <span class="bubble writing"></span>
+                  <div>Writing</div> 
+               </label>
+               <label>
+                  <input type="radio" name="category" id="category4" value="speaking" />
+                  <span class="bubble speaking"></span>
+                  <div>Speaking</div> 
+               </label>
+               
+            </div>
+
+            <input type="submit" value="Add todo" />
+         </form>
+      </section>
+
+      <section class="todo-list">
+         <h3>TODO LIST FOR <input type="text" id="date" placeholder="Date here"></h3>
+         <div class="list" id="todo-list">
+            </div>
+         </div>
+      </section>
+   </main>
+   <script src="main.js"></script>
+</body>
+</html>
